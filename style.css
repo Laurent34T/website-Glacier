@@ -1,0 +1,119 @@
+/* ||| GLACIER *****************************************************************/
+.glacier {
+    position: relative;
+    width: 90%;
+}
+.glacier article {
+    width: 20%;
+    padding-top: 5rem;
+    margin-left: 3rem;
+}
+.glacier h1 {
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+.glacier picture {
+    width: 65%;
+}
+.logo {
+    position: absolute;
+    top: -3rem; right: 0;
+    width: 10%;
+}
+
+
+/* ||| HORAIRES *****************************************************************/
+.horaires {
+    width: 70%;
+}
+.horaires div {
+    width: 80%;
+    margin-left: 2.5rem;
+}
+
+/* ||| ETAPES *****************************************************************/
+.etapes {
+    width: 70%;
+    gap: 3rem;
+    text-align: center;
+}
+.etapes img {
+    margin-bottom: 0.5rem;
+}
+.etapes p {
+    margin-bottom: 1.5rem;
+}
+
+/* ||| TEXT SLIDER *****************************************************************/
+.text_slider {
+    width: 50%;
+    text-align: center;
+}
+article.slide {
+    display: none;
+}
+article.slide p:first-of-type {
+    margin-bottom: 1rem;
+    font-family: Satisfy_regular;
+}
+article.slide_1 {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.text_slider div .circle {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.3rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+/* ||| MAGASIN *****************************************************************/
+.magasins{
+    align-self: flex-end;
+    width: 90%;
+    padding-right: 6rem;
+}
+.magasins article {
+    justify-content: flex-end;
+}
+.magasins div {
+    padding: 4rem 10rem 0 0;
+}
+
+/* ||| GALERIE *****************************************************************/
+.galerie {
+    width: 80%;
+    text-align: center;
+}
+.galerie > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* ||| CONTACT *****************************************************************/
+.contact {
+    width: 80%;
+    color: white;
+}
+.contact h2 {
+    margin: 0;
+}
+.contact form {
+    width: 50%;
+}
+.contact input:not(input[type="submit"]), textarea {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+

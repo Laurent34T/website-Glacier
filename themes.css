@@ -1,0 +1,178 @@
+/************ VARIABLES ******************************************************/
+:root {
+/* Codes couleurs :
+bleu clair #67c1c1
+bleu foncé #197c79 */
+    --border_black: 2px solid black;
+    --border_red: 2px solid red;
+    --color_link : white;
+    --light_blue : #67c1c1;
+    --dark_blue : #197c79;
+
+    scroll-behavior: smooth;
+
+}
+
+/******************* RESET *******************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: white;
+    font-family: Cor_regular;
+}
+
+
+/* GENERALE *******************************************************************/
+.container {
+    padding: 1rem;
+    background: url(./images/top-paspartu.jpg) top no-repeat, url(./images/side-paspartu.jpg) left top repeat-y, url(./images/top-paspartu.jpg) bottom no-repeat, url(./images/side-paspartu.jpg) right top repeat-y;
+    background-size: repeat(4, 100%);
+    background-color: var(--light_blue);
+}
+
+.container > section  {
+    margin: 4rem 0;
+}
+
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+    font-family: Aver_light;
+}
+h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: Aver_light;
+}
+h4{
+    font-size: 1.5rem;
+    font-family: Jose_w;
+}
+
+p.subtitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Jose_w;
+}
+input[type="submit"] {
+    width: 10rem;
+    height: 3rem;
+    font-family: Jose_w;
+    border: none;
+    cursor: pointer;
+    background-color: var(--dark_blue);
+}
+input[type="submit"]:hover {
+    color: var(--dark_blue);
+    border: 3px solid var(--dark_blue);
+    background-color: transparent;
+}
+
+li {
+    display: inline;
+    color: var(--color_link);
+}
+a:link, a {
+    text-decoration: none;
+    color: var(--color_link);
+    font-family: Jose_w;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ||| HEADER - Nav Bar *****************************************************************/
+header {
+    width: 100%;
+}
+nav {
+    align-items: center;
+    align-self: flex-start;
+    padding: 2rem;
+}
+nav li {
+    position: relative;
+}
+nav li a:hover {
+    color: var(--dark_blue);
+}
+nav .navigation li a:hover::before {
+    content: "";
+    position: absolute;
+    top: 3rem; left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+    height: 0.4rem;
+    background-color: var(--dark_blue);
+    animation: line 0.3s ease-in;
+}
+
+@keyframes line {
+    from {
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+
+
+/* ||| FOOTER *****************************************************************/
+footer {
+    position: relative;
+    height: 25rem;
+    color: white;
+    text-align: center;
+    background-image: url(./images/footer-image.jpg);
+    background-size: cover;
+}
+.logo_foot {
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+footer ul.network li:nth-child(4) a:hover i {
+    color: #121212;
+}
+
+
+/******************* Mini Framework ***************************************************/
+.navigation li {
+    padding: 1.5rem;
+}
+ul.network:first-of-type {
+    padding-top: 2rem;
+}
+.network li{
+    padding: 0.2rem;
+}
+
+
+/* Display flex */
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+/* Proprièté flex */
+.justify_between {
+    justify-content: space-between;
+}
+.justify_around {
+    justify-content: space-around;
+}
+.justify_center {
+    justify-content: center;
+}
+.align_center {
+    align-items: center;
+}

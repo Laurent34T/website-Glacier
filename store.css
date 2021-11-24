@@ -1,0 +1,52 @@
+/* ||| GALERIE *****************************************************************/
+.galerie {
+    width: 80%;
+    text-align: center;
+}
+.galerie > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+.galerie p, .galerie span {
+    font-size: 1.5rem;
+    font-family: Aver_light;
+}
+.galerie article:nth-child(6) span:nth-child(3) {
+    text-decoration: 2px line-through;
+}
+
+.galerie article:nth-child(6){
+    position: relative;
+}
+.promo {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    width: 6rem;
+    height: 6rem;
+    padding: 2rem 1rem;
+    border-radius: 50%;
+    background-color: var(--dark_blue);
+}
+
+/* ||| CONTACT *****************************************************************/
+.contact {
+    width: 80%;
+    color: white;
+}
+.contact h2 {
+    margin: 0;
+}
+.contact form {
+    width: 50%;
+}
+.contact input:not(input[type="submit"]), textarea {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+

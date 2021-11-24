@@ -1,0 +1,26 @@
+/* ||| Maps *****************************************************************/
+.maps {
+    width: 80%;
+}
+
+
+/* ||| CONTACT *****************************************************************/
+.contact {
+    width: 80%;
+    color: white;
+}
+.contact h2 {
+    margin: 0;
+}
+.contact form {
+    width: 50%;
+}
+.contact input:not(input[type="submit"]), textarea {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+

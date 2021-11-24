@@ -1,0 +1,29 @@
+/* ||| HISTORY *****************************************************************/
+.introduce {
+    width: 70%;
+}
+
+
+/* ||| HISTORY *****************************************************************/
+.history {
+    width: 70%;
+}
+.history > div {
+    gap: 1rem;
+}
+.history p.subtitle, .history h2 {
+    text-align: center;
+}
+
+/* ||| ETAPES *****************************************************************/
+.etapes {
+    width: 70%;
+    gap: 3rem;
+    text-align: center;
+}
+.etapes img {
+    margin-bottom: 0.5rem;
+}
+.etapes p {
+    margin-bottom: 1.5rem;
+}
